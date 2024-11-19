@@ -1,0 +1,172 @@
+.major-filter-container {
+    display: block;
+    margin-right: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.filter-container {
+    width: 1120px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: 350px;
+}
+
+.choose-major-desc {
+    color: #394148;
+    font-weight: bold;
+    line-height: 1.5em;
+    font-size: 18px;
+    margin: 0;
+}
+
+.choose-major-title {
+    color: #5E0A83;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.filter-box {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #5E5E5E;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    appearance: none; /* Removes default arrow in some browsers */
+    text-align: right;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.major-title {
+    color: #5E0A83;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 68px;
+    text-align: right;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 30px;
+    width: 1140px;
+    height: 100%;
+    margin-left: 320px;
+}
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 320px;
+    gap: 10px;
+}
+
+.show-more-button,
+.show-less-button {
+    background-color: #5E0A83;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "nf-l", Sans-serif;
+
+}
+
+.show-more-button:hover,
+.show-less-button:hover {
+    background-color: #450866;
+}
+
+@media (max-width: 1400px) {
+    .major-filter-container {
+        margin-right: 150px;
+    }
+    .filter-container {
+        margin-left: 100px;
+    }
+    .cards-container {
+        margin-left: 100px;
+    }
+    .show-more-container {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 1221px) {
+    .major-filter-container {
+        margin-right: 100px;
+    }
+    .filter-container {
+        margin-left: 80px;
+        width: 1000px;
+    }
+    .cards-container {
+        width: 1000px;
+        margin-left: 80px;
+    }
+    .show-more-container {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 780px) {
+    .major-filter-container {
+        margin-right: 60px;
+    }
+    .filter-container {
+        margin-left: 80px;
+        width: 600px;
+    }
+    .cards-container {
+        width: 700px;
+        margin-left: 0;
+    }
+    .show-more-container {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 360px) {
+    .major-filter-container {
+        margin-right: 20px;
+    }
+    .filter-container {
+        margin-left: 20px;
+        width: 280px;
+    }
+    .choose-major-desc {
+        font-size: 14px;
+    }
+    .choose-major-title {
+        font-size: 18px;
+    }
+    .cards-container {
+        width: 300px;
+        margin-left: 10px;
+    }
+    .show-more-container {
+        margin-left: 20px;
+    }
+}

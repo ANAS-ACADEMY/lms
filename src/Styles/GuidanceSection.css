@@ -1,0 +1,135 @@
+.guidance-container {
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-color: #5E0A83;
+    margin-bottom: 450px;
+}
+
+.guidance-second-container {
+    margin-left: 300px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 60px;
+    width: 1140px;
+}
+
+.guidancePic {
+    width: 381px;
+    height: 240px;
+    margin-top: 50px;
+}
+
+.guidance-content {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.guidance-title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 44px;
+    display: flex;
+    flex-direction: column;
+    width: 515px;
+
+}
+
+.guidance-desc {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    margin-top: 0;
+    width: 600px;
+}
+
+.guidance-button {
+    
+    width: 184px;
+    height: 46px;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF
+}
+
+.guidance-button-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "nf-l", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #000;
+    text-decoration: none;
+
+}
+
+.speakerPic {
+    padding-bottom: 5px;
+}
+
+@media (max-width: 1400px) {
+    .guidance-second-container {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1221px) {
+    .guidance-second-container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .guidance-container {
+        height: 400px;
+    }
+    .guidance-second-container {
+        margin-left: 0;
+        flex-direction: column;
+        width: 760px;
+    }
+    .guidancePic {
+        display: none;
+    }
+    .guidance-title {
+        font-size: 24px;
+        width: 600px;
+    }
+    .guidance-desc {
+        font-size: 20px;
+        width: 550px;
+    }
+}
+
+@media (max-width: 360px) {
+    .guidance-container {
+        height: 400px;
+    }
+    .guidance-second-container {
+        margin-left: 0;
+        flex-direction: column;
+        width: 340px;
+    }
+    .guidance-title {
+        font-size: 18px;
+        width: 300px;
+    }
+    .guidance-desc {
+        font-size: 14px;
+        width: 320px;
+    }
+}

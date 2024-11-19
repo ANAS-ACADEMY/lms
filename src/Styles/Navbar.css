@@ -1,0 +1,376 @@
+.navbar-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar-top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 750px;    
+    width: 755px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.navbar-top-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 407px;
+}
+
+.navbar-top-right-text {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-top-left {
+    width: 407px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-middle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 280px;
+    width: 1221px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 407px;
+}
+
+.request-button {
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #f70387;
+    border: 2px solid #f70387;
+}
+
+.request-button-text {
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.login-button {
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 2px solid #f70387;
+    text-decoration: none;
+}
+
+.login-button-text {
+    color: #f70387;
+    padding: 10px 15px;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+.logo-container {
+    width: 407px;
+}
+
+.anasAcadlogo {
+    width: 223px;
+    height: 45px;
+}
+
+.navbar-bottom {
+    padding-right: 100px;
+    border-top: 1px solid rgb(238, 231, 231);
+    width: 100%;
+    padding-left: 400px;
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 10
+}
+
+.menu-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: fit-content;
+    margin-top: 0;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu-item {
+    width: fit-content;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-grow: 0;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: #272d32;
+}
+
+.menu-item-top {
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdownArrow{
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.menu-dropdown-list {
+    list-style: none;
+    text-align: right;
+    display: block;
+    margin-top: 0;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 1;
+    height: fit-content;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+
+}
+
+.menu-dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.menu-dropdown-item-text {
+    text-decoration: none;
+    color: #272d32;
+}
+
+.dropdown-text {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.menu-dropdown-item:hover {
+    background-color: #000;
+}
+
+.menu-dropdown-item-text:hover {
+    color: #f0f0f0;
+
+}
+
+@media (max-width: 1400px) {
+    .navbar-top {
+        padding-left: 450px;
+    }
+    .navbar-top-right {
+        width: 300px;
+    }
+    .navbar-top-left {
+        width: 300px;
+    }
+    .navbar-middle {
+        padding-left: 200px;
+        width: 1000px;
+    }
+    .navbar-bottom {
+        padding-left: 180px;
+    }
+
+}
+
+@media (max-width: 1221px) {
+    .navbar-top {
+        padding-left: 300px;
+        font-size: 14px;
+    }
+    .navbar-top-right {
+        width: 300px;
+    }
+    .navbar-top-left {
+        width: 200px;
+    }
+    .navbar-middle {
+        padding-left: 160px;
+        width: 900px;
+    }
+    .buttons-container {
+        font-size: 16px;
+    }
+    .request-button-text {
+        padding: 8px 13px;
+    }
+    .login-button-text{
+        padding: 8px 13px;
+    }
+    .anasAcadlogo {
+        width: 212px;
+        height: 38px;
+    }
+    .navbar-bottom {
+        padding-left: 130px;
+    }
+    .menu-items {
+        font-size: 14px;
+
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+@media (max-width: 780px) {
+    .navbar-top {
+        display: none;
+    }
+    .navbar-middle {
+        width: 650px;
+        padding-left: 60px;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .small-screen-nav-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .buttons-container {
+        gap: 5px;
+    }
+    .request-button-text {
+        padding: 4px 7.5px;
+    }
+    .login-button-text{
+        padding: 4px 7.5px;
+    }
+    .anasAcadlogo {
+        width: 160px;
+        height: 34px;
+    }
+
+    .menu-items {
+        display: none;
+    }
+
+    .navbar-bottom.open .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 15px;
+        text-align: right;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        width: 180px;
+        left: 56%;
+        /* margin-left: 200px; */
+    }
+
+    /* Display hamburger icon on small screens */
+    .hamburger {
+        display: flex;
+    }
+    .menu-dropdown-list {
+        position: static; /* Remove absolute positioning */
+        box-shadow: none; /* Remove shadow to blend with the main menu */
+        padding-left: 20px; /* Indent the dropdown items */
+    }
+
+    .menu-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+    }
+
+    /* Ensure dropdown items display when their parent item is active */
+    .menu-item .menu-dropdown-list {
+        display: block; /* Show dropdown by default in mobile view */
+    }
+    .dropdown-text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-middle {
+        width: 300px;
+        padding-left: 30px;
+    }
+    .buttons-container {
+        display: none;
+    }
+    .navbar-bottom.open .menu-items {
+        left: 28%;
+        width: 160px;
+    }
+}
